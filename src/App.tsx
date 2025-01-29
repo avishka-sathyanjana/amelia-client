@@ -4,11 +4,12 @@ import DashboardPage from './pages/DashBoardPage';
 import TaskPage from './pages/TaskPage.tsx';
 import ChatbotPage from './pages/ChatbotPage';
 import AngerPage from './pages/emotions/AngerPage';
-import HappyPage from './pages/emotions/HappyPage';
+import HappyPage from './pages/emotions/Happy/HappyPage.tsx';
 import ExcitementPage from './pages/emotions/ExcitementPage';
 import FearPage from './pages/emotions/FearPage';
 import BoredomPage from './pages/emotions/BoredomPage';
 import CalmPage from './pages/emotions/CalmPage';
+import SadPage from './pages/emotions/SadPage.tsx';
 
 const App = () => {
   return (
@@ -23,6 +24,7 @@ const App = () => {
         <Route path="/tasks/fear" element={<FearPage />} />
         <Route path="/tasks/boredom" element={<BoredomPage />} />
         <Route path="/tasks/calm" element={<CalmPage />} />
+        <Route path="/tasks/sad" element={<SadPage/>}/>
       </Routes>
     </Router>
   );
