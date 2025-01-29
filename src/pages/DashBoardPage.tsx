@@ -17,7 +17,7 @@ const DashboardPage = () => {
     },
     {
       title: 'Chatbot',
-      description: 'Interact with our AI chatbot for emotion analysis',
+      description: 'Interact with our AI chatbot with Emotional Intelligence',
       icon: <ChatIcon sx={{ fontSize: 60 }}/>,
       path: '/chatbot'
     }
