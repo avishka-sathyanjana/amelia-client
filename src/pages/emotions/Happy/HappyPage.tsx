@@ -10,17 +10,17 @@ const HappyPage = () => {
     {
       title: 'Test 1',
       description: 'Basic happiness assessment',
-      path: '/tests/happy/test1'
+      path: '/tasks/happy/test1'
     },
     {
       title: 'Test 2',
       description: 'Advanced happiness evaluation',
-      path: '/tests/happy/test2'
+      path: '/tasks/happy/test2'
     },
     {
       title: 'Test 3',
       description: 'Comprehensive joy analysis',
-      path: '/tests/happy/test3'
+      path: '/tasks/happy/test3'
     }
   ];
 
