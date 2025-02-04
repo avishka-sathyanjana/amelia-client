@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import DashboardPage from './pages/DashBoardPage';
 import TaskPage from './pages/TaskPage.tsx';
 import ChatbotPage from './pages/ChatbotPage';
-import AngerPage from './pages/emotions/AngerPage';
+import AngerPage from './pages/emotions/Anger/AngerPage.tsx';
 import HappyPage from './pages/emotions/Happy/HappyPage.tsx';
 import ExcitementPage from './pages/emotions/ExcitementPage';
 import FearPage from './pages/emotions/FearPage';
@@ -17,6 +17,8 @@ import EvaluationPage from './pages/EvaluationPage.tsx';
 import HappyTest2 from './pages/emotions/Happy/HappyTest2.tsx';
 //add the global css file
 import './App.css';
+import AngerTest1 from './pages/emotions/Anger/AngerTest1.tsx';
+import AngerTest2 from './pages/emotions/Anger/AngerTest2.tsx';
 
 const App = () => {
   return (
@@ -31,7 +33,11 @@ const App = () => {
         <Route path="/tasks/happy/test1" element={<HappyTest1/>} />
         <Route path="/tasks/happy/test2" element={<HappyTest2/>} />
         <Route path="/tasks/happy/test3" element={<HappyTest3/>} />
+        <Route path="/tasks/anger/test1" element={<AngerTest1/>} />
+        <Route path="/tasks/anger/test2" element={<AngerTest2/>} />
+
         <Route path="/tasks/excitement" element={<ExcitementPage />} />
+        
         <Route path="/tasks/fear" element={<FearPage />} />
         <Route path="/tasks/boredom" element={<BoredomPage />} />
         <Route path="/tasks/calm" element={<CalmPage />} />

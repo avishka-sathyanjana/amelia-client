@@ -12,16 +12,16 @@ const TaskPage = () => {
       color: '#FFD700', // Gold
       path: '/tasks/happy'
     },
-    {
-      emotion: 'Excitement',
-      color: '#FF6B6B', // Coral
-      path: '/tasks/excitement'
-    },
-    {
-      emotion: 'Fear',
-      color: '#800080', // Purple
-      path: '/tasks/fear'
-    },
+    // {
+    //   emotion: 'Excitement',
+    //   color: '#FF6B6B', // Coral
+    //   path: '/tasks/excitement'
+    // },
+    // {
+    //   emotion: 'Fear',
+    //   color: '#800080', // Purple
+    //   path: '/tasks/fear'
+    // },
     {
       emotion: 'Anger',
       color: '#FF0000', // Red

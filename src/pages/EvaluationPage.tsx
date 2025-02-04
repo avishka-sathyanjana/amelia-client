@@ -10,7 +10,8 @@ const emotions = [
   { label: 'Angry', emoji: '😡' },
   { label: 'Surprised', emoji: '😮' },
   { label: 'Fearful', emoji: '😨' },
-  { label: 'Disgusted', emoji: '🤢' }
+  { label: 'Bored', emoji: '😑' },
+  { label: 'Clam', emoji: '😌' }
 ];
 
 const EvaluationPage = () => {

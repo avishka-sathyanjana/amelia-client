@@ -10,17 +10,17 @@ const AngerPage: React.FC = () => {
       {
         title: 'Test 1',
         description: 'Basic Anger assessment',
-        path: '/tests/anger/test1'
+        path: '/tasks/anger/test1'
       },
       {
         title: 'Test 2',
         description: 'Advanced anger evaluation',
-        path: '/tests/anger/test2'
+        path: '/tasks/anger/test2'
       },
       {
         title: 'Test 3',
         description: 'Comprehensive anger analysis',
-        path: '/tests/anger/test3'
+        path: '/tasks/anger/test3'
       }
     ];
   
