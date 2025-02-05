@@ -1,36 +1,25 @@
 import React, { useState, useRef } from 'react';
 import { Box, Button, Typography, useTheme } from '@mui/material';
 import { useNavigate } from 'react-router-dom';
+import useRecording from '@/components/hooks/useRecording';
+import Webcam from 'react-webcam';
 
 const HappyTest2 = () => {
   const navigate = useNavigate();
   const theme = useTheme();
   const [isCameraOn, setIsCameraOn] = useState(false);
-  const videoRef = useRef<HTMLVideoElement>(null);
+  const {webcamRef, startRecording, stopRecording } = useRecording();
 
   // Function to start the front camera
-  const handleStartCamera = async () => {
-    try {
-      const stream = await navigator.mediaDevices.getUserMedia({
-        video: { facingMode: 'user' }, // Front camera
-      });
-      if (videoRef.current) {
-        videoRef.current.srcObject = stream;
-        setIsCameraOn(true);
-      }
-    } catch (error) {
-      console.error('Error accessing the camera:', error);
-      alert('Failed to access the camera. Please ensure permissions are granted.');
-    }
+  const handleStartCamera = () => {
+    setIsCameraOn(true);
+    startRecording();
   };
 
   // Function to stop the camera
   const handleStopCamera = () => {
-    if (videoRef.current && videoRef.current.srcObject) {
-      const stream = videoRef.current.srcObject as MediaStream;
-      stream.getTracks().forEach((track) => track.stop());
-      setIsCameraOn(false);
-    }
+    setIsCameraOn(false);
+    stopRecording();
   };
 
   return (
@@ -65,12 +54,16 @@ const HappyTest2 = () => {
           backgroundColor: '#f0f0f0',
         }}
       >
-        <video
-          ref={videoRef}
-          autoPlay
-          playsInline
-          muted
-          style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+         <Webcam
+          audio={true} // Enable audio recording
+          ref={webcamRef}
+          width="100%"
+          height="100%"
+          videoConstraints={{
+            facingMode: 'user', // Front camera
+          }}
+          mirrored={true} // Mirror the video for a more natural feel
+          style={{ objectFit: 'cover' }}
         />
       </Box>
 
