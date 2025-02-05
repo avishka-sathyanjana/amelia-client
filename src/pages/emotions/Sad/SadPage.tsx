@@ -10,17 +10,17 @@ const SadPage: React.FC = () => {
       {
         title: 'Test 1',
         description: 'Basic Sadness assessment',
-        path: '/tests/sad/test1'
+        path: '/tasks/sad/test1'
       },
       {
         title: 'Test 2',
         description: 'Advanced Sadness evaluation',
-        path: '/tests/sad/test2'
+        path: '/tasks/sad/test2'
       },
       {
         title: 'Test 3',
         description: 'Comprehensive Sadness analysis',
-        path: '/tests/sad/test3'
+        path: '/tasks/sad/test3'
       }
     ];
   

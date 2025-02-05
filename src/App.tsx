@@ -20,6 +20,10 @@ import './App.css';
 import AngerTest1 from './pages/emotions/Anger/AngerTest1.tsx';
 import AngerTest2 from './pages/emotions/Anger/AngerTest2.tsx';
 import AngerTest3 from './pages/emotions/Anger/AngerTest3.tsx';
+import SadTest1 from './pages/emotions/Sad/SadTest1.tsx';
+import SadTest2 from './pages/emotions/Sad/SadTest2.tsx';
+import SadTest3 from './pages/emotions/Sad/SadTest3.tsx';
+
 
 const App = () => {
   return (
@@ -29,21 +33,27 @@ const App = () => {
         <Route path="/" element={<DashboardPage />} />
         <Route path="/tasks" element={<TaskPage />} />
         <Route path="/chatbot" element={<ChatbotPage />} />
-        <Route path="/tasks/anger" element={<AngerPage />} />
         <Route path="/tasks/happy" element={<HappyPage />} />
         <Route path="/tasks/happy/test1" element={<HappyTest1/>} />
         <Route path="/tasks/happy/test2" element={<HappyTest2/>} />
         <Route path="/tasks/happy/test3" element={<HappyTest3/>} />
+
+        <Route path="/tasks/anger" element={<AngerPage />} />
         <Route path="/tasks/anger/test1" element={<AngerTest1/>} />
         <Route path="/tasks/anger/test2" element={<AngerTest2/>} />
         <Route path="/tasks/anger/test3" element={<AngerTest3/>} />
+
+        <Route path="/tasks/sad" element={<SadPage/>}/>
+        <Route path="/tasks/sad/test1" element={<SadTest1 />} />
+        <Route path="/tasks/sad/test2" element={<SadTest2 />} />
+        <Route path="/tasks/sad/test3" element={<SadTest3 />} />
+        
 
         <Route path="/tasks/excitement" element={<ExcitementPage />} />
         
         <Route path="/tasks/fear" element={<FearPage />} />
         <Route path="/tasks/boredom" element={<BoredomPage />} />
         <Route path="/tasks/calm" element={<CalmPage />} />
-        <Route path="/tasks/sad" element={<SadPage/>}/>
 
         {/* Dynamic Route for Evaluation Page */}
         <Route
