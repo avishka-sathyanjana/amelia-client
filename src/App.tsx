@@ -9,7 +9,7 @@ import ExcitementPage from './pages/emotions/ExcitementPage';
 import FearPage from './pages/emotions/FearPage';
 import BoredomPage from './pages/emotions/BoredomPage';
 import CalmPage from './pages/emotions/CalmPage';
-import SadPage from './pages/emotions/Sad/SadPage.tsx';
+import SadPage from './pages/emotions/SadPage.tsx';
 import HappyTest3 from './pages/emotions/Happy/HappyTest3.tsx';
 import HappyTest1 from './pages/emotions/Happy/HappyTest1.tsx';
 import Breadcrumb from './components/general/Breadcrumbs.tsx';
@@ -19,7 +19,6 @@ import HappyTest2 from './pages/emotions/Happy/HappyTest2.tsx';
 import './App.css';
 import AngerTest1 from './pages/emotions/Anger/AngerTest1.tsx';
 import AngerTest2 from './pages/emotions/Anger/AngerTest2.tsx';
-import AngerTest3 from './pages/emotions/Anger/AngerTest3.tsx';
 
 const App = () => {
   return (
@@ -36,7 +35,6 @@ const App = () => {
         <Route path="/tasks/happy/test3" element={<HappyTest3/>} />
         <Route path="/tasks/anger/test1" element={<AngerTest1/>} />
         <Route path="/tasks/anger/test2" element={<AngerTest2/>} />
-        <Route path="/tasks/anger/test3" element={<AngerTest3/>} />
 
         <Route path="/tasks/excitement" element={<ExcitementPage />} />
         

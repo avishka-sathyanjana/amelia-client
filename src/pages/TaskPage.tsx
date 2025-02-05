@@ -27,12 +27,6 @@ const TaskPage = () => {
       color: '#FF0000', // Red
       path: '/tasks/anger'
     },
-  
-    {
-      emotion: 'Sad',
-      color: '#89FC', // Sky Blue
-      path: '/tasks/sad'
-    },
     {
       emotion: 'Boredom',
       color: '#808080', // Gray
@@ -43,7 +37,12 @@ const TaskPage = () => {
       color: '#87CEEB', // Sky Blue
       path: '/tasks/calm'
     }
-   
+    ,
+    {
+      emotion: 'Sad',
+      color: '#89FC', // Sky Blue
+      path: '/tasks/sad'
+    }
   ];
 
   return (
