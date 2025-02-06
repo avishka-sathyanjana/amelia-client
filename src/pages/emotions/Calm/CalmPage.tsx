@@ -10,17 +10,17 @@ const CalmPage: React.FC = () => {
       {
         title: 'Test 1',
         description: 'Basic Calmness assessment',
-        path: '/tests/calm/test1'
+        path: '/tasks/calm/test1'
       },
       {
         title: 'Test 2',
         description: 'Advanced Calmness evaluation',
-        path: '/tests/calm/test2'
+        path: '/tasks/calm/test2'
       },
       {
         title: 'Test 3',
         description: 'Comprehensive Calmness analysis',
-        path: '/tests/calm/test3'
+        path: '/tasks/calm/test3'
       }
     ];
   

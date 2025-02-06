@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import Webcam from 'react-webcam';
 import useRecording from '@/components/hooks/useRecording'; // Import the custom hook
 
-const BoredTest3 = () => {
+const CalmTest3 = () => {
   const navigate = useNavigate();
   const theme = useTheme();
 
@@ -79,7 +79,7 @@ const BoredTest3 = () => {
         <iframe
           width="100%"
           height="100%"
-          src="https://www.youtube.com/embed/M3QYDtSbhrA?si=AlQkeHVNu5Hwg8YM" // Use the video ID here
+          src="https://www.youtube.com/embed/UfcAVejslrU" // Use the video ID here
           title="YouTube video player"
           frameBorder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -146,4 +146,4 @@ const BoredTest3 = () => {
   );
 };
 
-export default BoredTest3;
+export default CalmTest3;

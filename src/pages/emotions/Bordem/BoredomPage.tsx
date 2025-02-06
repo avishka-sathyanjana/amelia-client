@@ -10,17 +10,17 @@ const BoredomPage: React.FC = () => {
       {
         title: 'Test 1',
         description: 'Basic Boredom assessment',
-        path: '/tests/bored/test1'
+        path: '/tasks/boredom/test1'
       },
       {
         title: 'Test 2',
         description: 'Advanced Boredom evaluation',
-        path: '/tests/bored/test2'
+        path: '/tasks/boredom/test2'
       },
       {
         title: 'Test 3',
         description: 'Comprehensive Bordem analysis',
-        path: '/tests/bored/test3'
+        path: '/tasks/boredom/test3'
       }
     ];
   
