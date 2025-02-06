@@ -7,7 +7,7 @@ import AngerPage from './pages/emotions/Anger/AngerPage.tsx';
 import HappyPage from './pages/emotions/Happy/HappyPage.tsx';
 import ExcitementPage from './pages/emotions/ExcitementPage';
 import FearPage from './pages/emotions/FearPage';
-import BoredomPage from './pages/emotions/BoredomPage';
+import BoredomPage from './pages/emotions/Bordem/BoredomPage.tsx';
 import CalmPage from './pages/emotions/CalmPage';
 import SadPage from './pages/emotions/Sad/SadPage.tsx';
 import Breadcrumb from './components/general/Breadcrumbs.tsx';
@@ -20,9 +20,13 @@ import HappyTest3 from './pages/emotions/Happy/HappyTest3.tsx';
 import AngerTest1 from './pages/emotions/Anger/AngerTest1.tsx';
 import AngerTest2 from './pages/emotions/Anger/AngerTest2.tsx';
 import AngerTest3 from './pages/emotions/Anger/AngerTest3.tsx';
-import SadTest1 from './pages/emotions/sad/SadTest1.tsx';
-import SadTest2 from './pages/emotions/sad/SadTest2.tsx';
-import SadTest3 from './pages/emotions/sad/SadTest3.tsx';
+import SadTest1 from './pages/emotions/Sad/SadTest1.tsx';
+import SadTest2 from './pages/emotions/Sad/SadTest2.tsx';
+import SadTest3 from './pages/emotions/Sad/SadTest3.tsx';
+import BordemTest1 from './pages/emotions/Bordem/BordemTest1.tsx';
+import BordemTest2 from './pages/emotions/Bordem/BordemTest2.tsx';
+import BordemTest3 from './pages/emotions/Bordem/BordemTest3.tsx';
+
 
 const App = () => {
   return (
@@ -49,11 +53,16 @@ const App = () => {
         <Route path="/tasks/sad/test2" element={<SadTest2/>} />
         <Route path="/tasks/sad/test3" element={<SadTest3/>} />
 
+        <Route path="/tasks/bored" element={<BoredomPage />} />
+        <Route path="/tasks/bored/test1" element={<BordemTest1/>} />
+        <Route path="/tasks/bored/test2" element={<BordemTest2/>} />
+        <Route path="/tasks/bored/test3" element={<BordemTest3/>} />
+
+
 
         <Route path="/tasks/excitement" element={<ExcitementPage />} />
         
         <Route path="/tasks/fear" element={<FearPage />} />
-        <Route path="/tasks/boredom" element={<BoredomPage />} />
         <Route path="/tasks/calm" element={<CalmPage />} />
 
         {/* Dynamic Route for Evaluation Page */}
