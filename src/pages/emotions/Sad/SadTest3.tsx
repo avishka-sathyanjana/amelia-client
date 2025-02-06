@@ -79,7 +79,7 @@ const SadTest3 = () => {
         <iframe
           width="100%"
           height="100%"
-          src="https://www.youtube.com/embed/zqQTODR3kR8?si=LLl7Xnls2SqIXDuX" // Use the video ID here
+          src="https://www.youtube.com/embed/b5qwTeCj4jc" // Use the video ID here
           title="YouTube video player"
           frameBorder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -127,7 +127,7 @@ const SadTest3 = () => {
 
         <Button
           variant="contained"
-          onClick={() => navigate('/tasks/sad/test1/evaluation')} // Navigate to evaluation page
+          onClick={() => navigate('/tasks/sad/test3/evaluation')} // Navigate to evaluation page
           sx={{
             height: '50px',
             width: '150px',

@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import Webcam from 'react-webcam';
 import useRecording from '@/components/hooks/useRecording'; // Import the custom hook
 
-const SadTest2 = () => {
+const CalmTest1 = () => {
   const navigate = useNavigate();
   const theme = useTheme();
 
@@ -79,7 +79,7 @@ const SadTest2 = () => {
         <iframe
           width="100%"
           height="100%"
-          src="https://www.youtube.com/embed/MXl1jTBT6fQ" // Use the video ID here
+          src="https://www.youtube.com/embed/PjUZbgZfMOo" // Use the video ID here
           title="YouTube video player"
           frameBorder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -127,7 +127,7 @@ const SadTest2 = () => {
 
         <Button
           variant="contained"
-          onClick={() => navigate('/tasks/sad/test2/evaluation')} // Navigate to evaluation page
+          onClick={() => navigate('/tasks/sad/test1/evaluation')} // Navigate to evaluation page
           sx={{
             height: '50px',
             width: '150px',
@@ -146,4 +146,4 @@ const SadTest2 = () => {
   );
 };
 
-export default SadTest2;
+export default CalmTest1;
