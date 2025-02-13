@@ -66,10 +66,10 @@ const App = () => {
         <Route path="/tasks/calm/test2" element={<CalmTest2 />} />
         <Route path="/tasks/calm/test3" element={<CalmTest3 />} />
 
-
+{/* 
         <Route path="/tasks/excitement" element={<ExcitementPage />} />
         
-        <Route path="/tasks/fear" element={<FearPage />} />
+        <Route path="/tasks/fear" element={<FearPage />} /> */}
 
         {/* Dynamic Route for Evaluation Page */}
         <Route

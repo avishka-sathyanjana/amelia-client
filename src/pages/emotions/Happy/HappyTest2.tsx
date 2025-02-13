@@ -55,7 +55,7 @@ const HappyTest2 = () => {
         }}
       >
          <Webcam
-          audio={true} // Enable audio recording
+          audio={false} // Enable audio recording
           ref={webcamRef}
           width="100%"
           height="100%"

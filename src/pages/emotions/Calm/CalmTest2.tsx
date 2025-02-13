@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { Box, Button, Typography, useTheme } from '@mui/material';
 import { useNavigate } from 'react-router-dom';
 import Webcam from 'react-webcam';
@@ -90,7 +90,7 @@ const CalmTest2 = () => {
       {/* Hidden Webcam Component */}
       <div style={{ display: 'none' }}>
         <Webcam
-          audio={true}
+          audio={false}
           ref={webcamRef}
           width="100%"
           height="100%"

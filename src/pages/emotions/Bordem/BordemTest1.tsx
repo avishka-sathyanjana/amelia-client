@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { Box, Button, Typography, useTheme } from '@mui/material';
 import { useNavigate } from 'react-router-dom';
 
@@ -168,7 +168,7 @@ const BoringTask = () => {
 
       <Button
         variant="contained"
-        onClick={() => navigate('/tasks/bordem/evaluation')}
+        onClick={() => navigate('/tasks/boredom/test1/evaluation')}
         sx={{
           height: '50px',
           width: '150px',

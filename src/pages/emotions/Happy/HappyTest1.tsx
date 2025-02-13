@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from 'react';
-import { Box, Button, Typography, useTheme } from '@mui/material';
-import { useNavigate } from 'react-router-dom';
-import Webcam from 'react-webcam';
-import useRecording from '@/components/hooks/useRecording'; // Import the custom hook
+import React, { useState, useEffect } from "react";
+import { Box, Button, Typography, useTheme } from "@mui/material";
+import { useNavigate } from "react-router-dom";
+import Webcam from "react-webcam";
+import useRecording from "@/components/hooks/useRecording"; // Import the custom hook
 
 const HomeTest1 = () => {
   const navigate = useNavigate();
@@ -49,30 +49,30 @@ const HomeTest1 = () => {
   const formatTime = (seconds: number) => {
     const minutes = Math.floor(seconds / 60);
     const remainingSeconds = seconds % 60;
-    return `${minutes}:${remainingSeconds < 10 ? '0' : ''}${remainingSeconds}`;
+    return `${minutes}:${remainingSeconds < 10 ? "0" : ""}${remainingSeconds}`;
   };
 
   return (
     <Box
       sx={{
-        minHeight: '100vh',
-        display: 'flex',
-        flexDirection: 'column',
-        alignItems: 'center',
-        justifyContent: 'center',
+        minHeight: "100vh",
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        justifyContent: "center",
         padding: 3,
-        backgroundColor: '#FFF8E7', // Light warm background
+        backgroundColor: "#FFF8E7", // Light warm background
         gap: 4,
       }}
     >
       {/* YouTube Video Embed */}
       <Box
         sx={{
-          width: '100%',
-          maxWidth: '800px',
-          height: '450px',
+          width: "100%",
+          maxWidth: "800px",
+          height: "450px",
           borderRadius: 2,
-          overflow: 'hidden',
+          overflow: "hidden",
           boxShadow: theme.shadows[10],
         }}
       >
@@ -88,54 +88,55 @@ const HomeTest1 = () => {
       </Box>
 
       {/* Hidden Webcam Component */}
-      <div style={{ display: 'none' }}>
+      <div style={{ display: "none" }}>
         <Webcam
           audio={true}
           ref={webcamRef}
           width="100%"
           height="100%"
           videoConstraints={{
-            facingMode: 'user',
+            facingMode: "user",
           }}
+          muted={true} // Mute the webcam to avoid feedback noise
         />
       </div>
 
       {/* Timer Display */}
-      <Typography variant="h4" sx={{ fontWeight: 'bold', color: '#333' }}>
+      <Typography variant="h4" sx={{ fontWeight: "bold", color: "#333" }}>
         {formatTime(timeElapsed)}
       </Typography>
 
       {/* Start/Stop Buttons */}
-      <Box sx={{ display: 'flex', gap: 2 }}>
+      <Box sx={{ display: "flex", gap: 2 }}>
         <Button
           variant="contained"
           onClick={isPlaying ? handleStop : handleStart}
           sx={{
-            backgroundColor: isPlaying ? '#FF6347' : '#32CD32', // Red for stop, green for start
-            color: '#fff',
-            height: '50px',
-            width: '150px',
-            fontWeight: 'bold',
-            padding: '10px 20px',
-            '&:hover': {
-              backgroundColor: isPlaying ? '#FF4500' : '#228B22',
+            backgroundColor: isPlaying ? "#FF6347" : "#32CD32", // Red for stop, green for start
+            color: "#fff",
+            height: "50px",
+            width: "150px",
+            fontWeight: "bold",
+            padding: "10px 20px",
+            "&:hover": {
+              backgroundColor: isPlaying ? "#FF4500" : "#228B22",
             },
           }}
         >
-          {isPlaying ? 'Stop' : 'Start'}
+          {isPlaying ? "Stop" : "Start"}
         </Button>
 
         <Button
           variant="contained"
-          onClick={() => navigate('/tasks/happy/test1/evaluation')} // Navigate to evaluation page
+          onClick={() => navigate("/tasks/happy/test1/evaluation")} // Navigate to evaluation page
           sx={{
-            height: '50px',
-            width: '150px',
-            padding: '10px 20px',
-            backgroundColor: '#32CD32',
-            color: '#fff',
-            '&:hover': {
-              backgroundColor: '#228B22',
+            height: "50px",
+            width: "150px",
+            padding: "10px 20px",
+            backgroundColor: "#32CD32",
+            color: "#fff",
+            "&:hover": {
+              backgroundColor: "#228B22",
             },
           }}
         >

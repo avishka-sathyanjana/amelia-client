@@ -90,7 +90,7 @@ const SadTest2 = () => {
       {/* Hidden Webcam Component */}
       <div style={{ display: 'none' }}>
         <Webcam
-          audio={true}
+          audio={false}
           ref={webcamRef}
           width="100%"
           height="100%"
